@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+
+<style>
+body{
+    font-family:Arial;
+    background:linear-gradient(135deg,#0f0c29,#302b63,#ff2e63);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.box{
+    background:rgba(255,255,255,0.1);
+    width:80%;
+    margin:auto;
+    padding:20px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px #ff2e63;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid white;
+}
+
+th{
+    background:#ff2e63;
+}
+
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#ff2e63;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🛡️ Admin Panel</h1>
+
+<div class="box">
+
+<table>
+<tr>
+<th>ID</th>
+<th>Username</th>
+</tr>
+
+{% for user in users %}
+<tr>
+<td>{{ user[0] }}</td>
+<td>{{ user[1] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+<a href="/logout">Logout</a>
+
+</body>
+</html>

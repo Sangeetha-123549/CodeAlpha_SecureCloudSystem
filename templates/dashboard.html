@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(135deg,#0f0c29,#302b63,#ff2e63);
+    color:white;
+    text-align:center;
+    padding-top:100px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:40px;
+    width:300px;
+    margin:auto;
+    border-radius:20px;
+    box-shadow:0 0 20px #ff2e63;
+    backdrop-filter:blur(10px);
+}
+
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#ff2e63;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+    <h2>👋 Welcome {{ user }}</h2>
+    <p>Secure Cloud System Running 🚀</p>
+    <a href="/logout">Logout</a>
+</div>
+
+</body>
+</html>
